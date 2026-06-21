@@ -4,14 +4,20 @@ import BrandMark from "./BrandMark";
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#1B3A6B] text-white">
-      <div className="absolute inset-x-0 top-0">
-        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-auto w-full" preserveAspectRatio="none">
+      <div className="pointer-events-none absolute inset-x-0 top-0">
+        <svg
+          viewBox="0 0 1440 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="block h-16 w-full -scale-x-100 sm:h-20"
+          preserveAspectRatio="none"
+        >
           <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,15 1440,20 L1440,0 L0,0 Z" fill="#FFF8F0" />
         </svg>
       </div>
 
-      <div className="container pb-8 pt-20">
-        <div className="mb-12 grid gap-10 md:grid-cols-3">
+      <div className="container relative z-10 pb-8 pt-28 sm:pt-32">
+        <div className="mt-[47px] mb-12 grid gap-10 md:mt-[55px] md:grid-cols-3">
           <div>
             <BrandMark inverted />
             <p className="mt-4 leading-relaxed text-white/70">
