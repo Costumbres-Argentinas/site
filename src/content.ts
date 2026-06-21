@@ -12,9 +12,11 @@ export type MenuCategory = {
   items: MenuItem[];
 };
 
-export const heroImage = "/assets/hero-pizza-horno.webp";
-export const pizzaCloseupImage = "/assets/pizza-close-up.webp";
-export const empanadasImage = "/assets/empanadas-hero.webp";
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}assets/${path}`;
+
+export const heroImage = assetUrl("hero-pizza-horno.webp");
+export const pizzaCloseupImage = assetUrl("pizza-close-up.webp");
+export const empanadasImage = assetUrl("empanadas-hero.webp");
 
 export const galleryImages = [
   {
